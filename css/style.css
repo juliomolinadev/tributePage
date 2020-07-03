@@ -9,7 +9,7 @@ body {
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: 120px 1fr 1fr 120px;
+	grid-template-rows: 120px auto 1fr 120px;
 	grid-gap: 20px;
 }
 
@@ -72,6 +72,12 @@ img {
 	grid-column: 2/3;
 	grid-row: 3/4;
 	font-size: 20px;
+}
+
+@media (max-width: 800px) {
+	#tribute-info {
+		grid-column: 1/4;
+	}
 }
 
 #tribute-link {
